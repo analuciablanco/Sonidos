@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sonidos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyu-Xb-IZq">
+                                <rect key="frame" x="42" y="256" width="291" height="250"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Button" image="tururut_dab"/>
+                                <connections>
+                                    <action selector="doTapSans:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdM-0o-Bpk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKs-zj-u32">
+                                <rect key="frame" x="144" y="99" width="87" height="30"/>
+                                <state key="normal" title="e we tócame"/>
+                                <connections>
+                                    <segue destination="yIo-eb-sFj" kind="show" id="CEu-fm-ouq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gyu-Xb-IZq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="236" id="44y-w8-kNH"/>
+                            <constraint firstItem="Gyu-Xb-IZq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="DEL-2P-wKS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gyu-Xb-IZq" secondAttribute="bottom" constant="161" id="Fnf-qT-gOD"/>
+                            <constraint firstItem="rKs-zj-u32" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="Ovl-IE-JVG"/>
+                            <constraint firstItem="rKs-zj-u32" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="RbU-CP-f3y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gyu-Xb-IZq" secondAttribute="trailing" constant="42" id="SLb-zZ-j34"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rKs-zj-u32" secondAttribute="trailing" constant="144" id="Vqx-bL-5e6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0Me-O9-t9D"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wTF-Te-bG9">
+            <objects>
+                <viewController storyboardIdentifier="viewController2" id="yIo-eb-sFj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="shm-qB-6Ki">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.37128892540000002" green="0.25772702689999999" blue="0.62356156110000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="9zj-jt-zcr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPF-6r-8ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tururut_dab" width="184" height="250"/>
+    </resources>
+</document>
